@@ -27,12 +27,13 @@ body {
 }
 
 .container {
-    background-color: rgba(16, 16, 16, 0.75);
+    background-color: rgba(16, 16, 16, 0.41);
     border: 1px solid #5C5C5C;
     padding: 10px;
     float: left;
     box-shadow: 1px 2px 10px #000000;
     border-radius: 5px;
+    backdrop-filter: blur(7px);
 }
 
 .container::after {
@@ -42,17 +43,18 @@ body {
 }
 
 .containerChat {
-    background-color: rgba(40, 42, 46, 1);
+    background-color: rgba(16, 16, 16, 0.41);
     border: 1px solid #5C5C5C;
     padding: 10px;
     float: left;
     box-shadow: 1px 2px 10px #000000;
     border-radius: 5px;
     overflow-y: auto;
+    backdrop-filter: blur(7px);
 }
 
 .navigation {
-    background-color: rgba(16, 16, 16, 0.75);
+    background-color: rgba(16, 16, 16, 0.41);
     border: 1px solid #5C5C5C;
     padding: 2px 5px;
     box-shadow: 1px 2px 10px #000000;
@@ -60,6 +62,7 @@ body {
     text-align: center;
     margin: 10px auto;
     width: 968px;
+    backdrop-filter: blur(7px);
 }
 
 .con1 {
