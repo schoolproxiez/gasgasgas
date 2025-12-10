@@ -172,13 +172,13 @@
 <script>
 // Function to load the Minecraft server player count
 function loadPlayerCount() {
-    const apiUrl = 'https://api.mcsrvstat.us/3/olderfag.org';
+    const apiUrl = 'https://mcapi.us/server/status?ip=olderfag.org';
     
     // Make an AJAX request to the API to get the server status
     $.get(apiUrl, function(data) {
         if (data.online) {
             // Display the number of online players
-            $('#playerCount').html('Players online: ' + data.players.online + '/' + data.players.max);
+            $('#playerCount').html('Players online: ' + data.players.now + '/' + data.players.max);
         } else {
             $('#playerCount').html('The server is offline.');
         }
